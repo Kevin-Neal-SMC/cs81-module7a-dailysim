@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Daily Schedule Simulation</title>
+    <meta charset="UTF-8">
+    <title>My Daily Schedule Simulation</title>
 </head>
 <body style="font-family: sans-serif; text-align: center; padding-top: 60px; background-color: #eef;">
 
-  <h1>My Simulated Day</h1>
-  <div id="output" style="margin-top: 40px; font-size: 1.5rem;"></div>
+<h1>My Simulated Day</h1>
+<div id="output" style="margin-top: 40px; font-size: 1.5rem;"></div>
 
-  <script>
+<script>
     const output = document.getElementById("output");
-    
-    # ADD CODE HERE
 
-  </script>
+    function show(activity) {
+        output.innerHTML += activity + '<br>';
+    }
+    setTimeout(() => show('Take my dog for a walk and enjoy the warm weather...'), 500);
+    setTimeout(() => show('Prepare myself a cup of tea...'), 1500);
+    setTimeout(() => show('Read a book for about 1 hour...'), 2500);
+    setTimeout(() => show('Tidy up my room...'), 3500);
+    setTimeout(() => show('Provide water to the house plants...'), 4500);
+    setTimeout(() => show('Set off to my local library...'), 5500);
+
+</script>
 
 </body>
 </html>
